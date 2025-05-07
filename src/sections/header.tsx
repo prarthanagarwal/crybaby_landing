@@ -41,26 +41,7 @@ export default function Header() {
               Download on App Store
             </Button>
           </Link>
-          <Link href="/coming-soon" className="relative w-full sm:w-auto">
-            {/* Desktop arrow and label */}
-            <div className="absolute hidden sm:block top-14 right-8">
-              <div className="relative transform rotate-[98deg]">
-                <Image 
-                  src="/curved-arrow.svg" 
-                  alt="Curved Arrow" 
-                  width={80} 
-                  height={80} 
-                  className="transform -scale-x-100"
-                />
-              </div>
-              
-              <div className="absolute top-12 -right-32">
-                <span className="bg-main border-2 border-black py-1 px-3 rounded-lg font-bold text-sm transform shadow-light inline-block">
-                  Coming Soon
-                </span>
-              </div>
-            </div>
-            
+          <Link href="https://play.google.com/store/apps/details?id=dev.prarthanagarwal.crybaby&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
             <Button
               size="lg"
               variant="neutral"
@@ -75,22 +56,6 @@ export default function Header() {
               />
               Get it on Play Store
             </Button>
-            
-            {/* Mobile arrow and label - positioned after the button */}
-            <div className="block sm:hidden mt-2 text-center">
-              <div className="flex justify-center mb-1">
-                <Image 
-                  src="/curved-arrow.svg" 
-                  alt="Curved Arrow" 
-                  width={30} 
-                  height={30} 
-                  className="transform"
-                />
-              </div>
-              <span className="bg-main border-2 border-black py-0.5 px-2 rounded-md font-bold text-xs shadow-light inline-block">
-                Coming Soon
-              </span>
-            </div>
           </Link>
         </div>
       </div>
