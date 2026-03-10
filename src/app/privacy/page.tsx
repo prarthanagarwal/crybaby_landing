@@ -1,3 +1,12 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy',
+  description:
+    'Learn how CryBaby collects, uses, and protects your personal data.',
+  alternates: { canonical: '/privacy' },
+}
+
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-bg dark:bg-darkBg py-20">

@@ -1,3 +1,12 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Terms of Service',
+  description:
+    'Read the terms and conditions for using the CryBaby application.',
+  alternates: { canonical: '/terms' },
+}
+
 export default function TermsOfService() {
   return (
     <div className="min-h-screen bg-bg dark:bg-darkBg py-20">
