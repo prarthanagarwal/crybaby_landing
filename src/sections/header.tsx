@@ -15,6 +15,8 @@ export default function Header() {
                 fill
                 className="object-contain"
                 priority
+                fetchPriority="high"
+                sizes="(max-width: 640px) 150px, 200px"
               />
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading">

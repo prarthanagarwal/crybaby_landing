@@ -20,7 +20,7 @@ const EmailButton = ({ type, children }: { type: string; children: React.ReactNo
 
 export default function Feedback() {
   return (
-    <div className="min-h-screen bg-bg dark:bg-darkBg py-32">
+    <div className="min-h-screen bg-bg dark:bg-darkBg py-10 sm:py-16">
       <div className="mx-auto max-w-[900px] px-5">
         <div className="border-border dark:border-darkBorder dark:bg-secondaryBlack shadow-light dark:shadow-dark rounded-base border-2 bg-white p-8">
           <h1 className="text-4xl font-heading mb-6 text-center">💭 Share Your Thoughts</h1>
@@ -77,15 +77,15 @@ export default function Feedback() {
               <ul className="space-y-2">
                 <li className="flex items-center gap-2">
                   <span>📧</span>
-                  <span>Email: contact@crybaby.app</span>
+                  <a href="mailto:contact@crybaby.app" className="underline hover:text-black dark:hover:text-white transition-colors">contact@crybaby.app</a>
                 </li>
                 <li className="flex items-center gap-2">
                   <span>🌐</span>
-                  <span>Twitter: @prarthanagarwal</span>
+                  <a href="https://x.com/prarthanagarwal" target="_blank" rel="noopener noreferrer" className="underline hover:text-black dark:hover:text-white transition-colors">Twitter: @prarthanagarwal</a>
                 </li>
                 <li className="flex items-center gap-2">
                   <span>💻</span>
-                  <span>GitHub: github.com/prarthanagarwal</span>
+                  <a href="https://github.com/prarthanagarwal" target="_blank" rel="noopener noreferrer" className="underline hover:text-black dark:hover:text-white transition-colors">GitHub: prarthanagarwal</a>
                 </li>
               </ul>
             </div>

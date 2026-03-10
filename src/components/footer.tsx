@@ -45,7 +45,16 @@ export default function Footer() {
           </Link>
         </div>
         <p className="text-sm text-gray-600 dark:text-gray-400">
-          Made with 😢 by Prarthan Agarwal. All rights reserved.
+          Made with 😢 by{' '}
+          <Link
+            href="https://prarthanagarwal.me"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-black dark:hover:text-white transition-colors"
+          >
+            Prarthan Agarwal
+          </Link>
+          . All rights reserved.
         </p>
       </div>
     </footer>

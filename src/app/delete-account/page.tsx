@@ -49,7 +49,7 @@ export default function DeleteAccount() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-16 max-w-2xl">
+    <div className="min-h-screen bg-bg dark:bg-darkBg container mx-auto px-4 py-10 sm:py-16 max-w-2xl">
       <div className="bg-white dark:bg-gray-900 p-8 rounded-lg border-4 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
         <h1 className="text-4xl font-bold mb-2">Goodbye Friend 👋</h1>
         <p className="text-gray-600 dark:text-gray-400 mb-8">We&apos;ll miss your emotional moments...</p>

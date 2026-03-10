@@ -16,6 +16,7 @@
 # production
 /build
 /Docs
+/ui-screens
 
 # misc
 .DS_Store

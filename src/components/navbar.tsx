@@ -28,7 +28,7 @@ export const Navbar = () => {
 
   return (
     <nav className="absolute top-4 sm:top-6 left-0 right-0 mx-4 sm:mx-auto z-50 sm:max-w-fit">
-      <div className="flex flex-col sm:flex-row items-center bg-white dark:bg-darkBg border-2 border-black shadow-light dark:shadow-dark px-4 sm:px-6 py-2 sm:py-3 rounded-base">
+      <div className="flex flex-col sm:flex-row items-center bg-bg/80 backdrop-blur-md dark:bg-darkBg/80 border-2 border-black shadow-light dark:shadow-dark px-4 sm:px-6 py-2 sm:py-3 rounded-base">
         <div className="w-full sm:w-auto flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <div className="relative w-10 h-10 sm:w-12 sm:h-12">
@@ -37,6 +37,7 @@ export const Navbar = () => {
                 alt="CryBaby"
                 fill
                 className="object-contain"
+                sizes="48px"
               />
             </div>
           </Link>

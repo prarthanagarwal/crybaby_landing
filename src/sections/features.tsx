@@ -1,28 +1,34 @@
-import Marquee from 'react-fast-marquee'
+const features = [
+  {
+    title: 'Crying Session Tracking',
+    text: 'Log each session with the trigger, emotion, duration, and intensity so the story behind the moment stays clear.',
+  },
+  {
+    title: 'Achievements System',
+    text: 'Progress feels playful with unlocks and streaks that reward consistency without turning self-reflection into a chore.',
+  },
+  {
+    title: 'Insights & Analytics',
+    text: 'Weekly summaries and visual trends make it easier to spot patterns in relief, timing, and emotional load.',
+  },
+  {
+    title: 'Privacy & Sync',
+    text: 'Your logs stay personal while syncing across devices, so the app feels dependable without getting in the way.',
+  },
+]
+
+const marqueeItems = [
+  'Track your cry',
+  'Understand the pattern',
+  'Celebrate the progress',
+  'Private by default',
+]
 
 export default function Features() {
-  const features = [
-    {
-      title: '🎯 Crying Session Tracking',
-      text: 'Log your crying sessions with details like duration, intensity, and triggers. Track volume levels from "Glass" to "Tsunami".',
-    },
-    {
-      title: '🏆 Achievements System',
-      text: 'Unlock 50+ unique achievements across Bronze, Silver, and Gold tiers. Earn special badges for different crying volumes and patterns.',
-    },
-    {
-      title: '📊 Insights & Analytics',
-      text: 'Beautiful, interactive charts showing your crying patterns, weekly summaries, and emotional well-being tracking.',
-    },
-    {
-      title: '🔐 Privacy & Security',
-      text: 'Secure, private logging of your emotional moments with Google Sign-In and real-time data synchronization.',
-    },
-  ]
 
   return (
     <div>
-      <section className="border-t-border dark:border-t-darkBorder border-t-2 py-12 sm:py-16 lg:py-[100px] font-base bg-bg dark:bg-darkBg bg-[linear-gradient(to_right,#00000015_1px,transparent_1px),linear-gradient(to_bottom,#00000015_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#ffffff15_1px,transparent_1px),linear-gradient(to_bottom,#ffffff15_1px,transparent_1px)] bg-[size:20px_20px]">
+      <section className="section-shell border-t-2 border-t-border bg-bg bg-[linear-gradient(to_right,#00000015_1px,transparent_1px),linear-gradient(to_bottom,#00000015_1px,transparent_1px)] bg-[size:20px_20px] py-12 font-base dark:border-t-darkBorder dark:bg-darkBg dark:bg-[linear-gradient(to_right,#ffffff15_1px,transparent_1px),linear-gradient(to_bottom,#ffffff15_1px,transparent_1px)] sm:py-16 lg:py-[100px]">
         <h2 className="mb-8 sm:mb-12 lg:mb-20 px-4 sm:px-5 text-center text-2xl sm:text-3xl lg:text-4xl font-heading">
           Turn Your Tears into Triumphs
         </h2>
@@ -45,23 +51,18 @@ export default function Features() {
           </div>
         </div>
       </section>
-      <div>
-        <Marquee
-          className="border-y-border dark:border-y-darkBorder dark:border-darkBorder dark:bg-secondaryBlack border-y-2 bg-white py-2 sm:py-3 lg:py-5 font-base"
-          direction="left"
-        >
-          {[
-            'CryBaby - track & find joy in your crying sessions :)'
-          ].map((text, id) => {
-            return (
-              <div className="flex items-center" key={id}>
-                <span className="mx-4 sm:mx-6 lg:mx-8 text-lg sm:text-xl lg:text-4xl font-heading">
+      <div className="border-y-2 border-y-border bg-white py-2 font-base dark:border-y-darkBorder dark:bg-secondaryBlack sm:py-3 lg:py-5">
+        <div className="marquee-fade relative overflow-hidden">
+          <div className="marquee-track">
+            {[...marqueeItems, ...marqueeItems].map((text, id) => (
+              <div className="flex items-center" key={`${text}-${id}`}>
+                <span className="mx-4 text-lg font-heading sm:mx-6 sm:text-xl lg:mx-8 lg:text-4xl">
                   {text}
                 </span>
               </div>
-            )
-          })}
-        </Marquee>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   )

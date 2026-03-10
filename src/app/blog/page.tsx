@@ -1,11 +1,9 @@
-'use client'
-
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
 export default function Blog() {
   return (
-    <div className="min-h-screen bg-bg dark:bg-darkBg py-32">
+    <div className="min-h-screen bg-bg dark:bg-darkBg py-10 sm:py-16">
       <div className="mx-auto max-w-[900px] px-5">
         <div className="border-border dark:border-darkBorder dark:bg-secondaryBlack shadow-light dark:shadow-dark rounded-base border-2 bg-white p-8 text-center">
           <h1 className="text-4xl font-heading mb-6">📝 Blog</h1>
